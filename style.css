@@ -1,0 +1,12 @@
+#navbar {
+   width: 100%;
+   height: 100px;
+   background-color: dodgerblue;
+   text-align: center;
+}
+
+#frame {
+   border: none;
+   width: 100%;
+   height: 500px;
+}
