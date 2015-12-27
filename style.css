@@ -1,24 +1,70 @@
 html, body {
-	height: 100%;
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   overflow: hidden;
 }
 
+body {
+   background-color: yellow;
+}
+
+/*
 #navbar {
    font-size: 1.5em;
    position: fixed;
+   float: left;
+   width: 100%;
 }
 
 #navbar button span {
 	font-size: 1.5em;
 }
 
-#category {
-   background-color: dodgerblue;
+#settingsButton {
+   text-align: center;
+   width: 100px;
    display: inline-block;
+   background-color: red;
+}
+
+#nextButton {
+   text-align: center;
+   width: 50%;
+   float: right;
+   display: inline-block;
+   background-color: green;
+}*/
+
+#topnav {
+   font-size: 1.5em;
+   text-align: center;
+   list-style-type: none;
+   width: 100%;
+   height: 10%;
+}
+
+#editButton {
+   background-color: green;
+   width: 20%;
+   height: 100%;
+   float: left;
+}
+
+#nextButton {
+   background-color: blue;
+   width: 80%;
+   height: 100%;
+   float: right;
+}
+
+#category {
+   background-color: gray;
 }
 
 #frameDiv {
    width: 100%;
-   height: 100%;
+   height: 90%;
 }
 
 #frameDiv iframe {
