@@ -13,6 +13,7 @@ html, body {
 
 #category {
    background-color: dodgerblue;
+   display: inline-block;
 }
 
 #frameDiv {
