@@ -14,11 +14,7 @@
     <button onclick="primReload()"> <span style="font-size: 3em">Primitive reload</span> </button>
     <p id="category"></p>
   </div>
--->
-  <div id="frameDiv">
-    <iframe src="https://en.m.wikipedia.org/wiki/Special:RandomInCategory/Beaches_of_Japan" id="frame"> Nothing here </iframe>
-  </div>
-<!--
+
   <script>
   function primReload() {
     var n = Math.floor(Math.random() * 2);
@@ -35,7 +31,24 @@
 
     document.getElementById("frame").src = url;
   }
--->
   </script>
+-->
+  <div id="navbar">
+    <button onclick="showDim()"> <span style="font-size: 3em">Dimensions</span> </button>
+    <p id="category"></p>
+  </div>
+
+  <script>
+  function showDim() {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    document.getElementById("category").innerHTML = "Width: " + w + "<br>Height: " + h;
+  }
+  </script>
+
+  <div id="frameDiv">
+    <iframe src="https://en.m.wikipedia.org/wiki/Uradome_Coast"> Nothing here </iframe>
+  </div>
 </body>
 </html>
