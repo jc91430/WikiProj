@@ -6,8 +6,12 @@ html, body {
    width: 150px;
    height: 70px;
    position: fixed;
-   background-color: green;
+   margin-left: 50%;
    text-align: center;
+   background-color: green;
+}
+
+#category {
    font-size: 1em;
 }
 
