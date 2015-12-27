@@ -3,16 +3,15 @@ html, body {
 }
 
 #navbar {
-   width: 150px;
-   height: 70px;
    position: fixed;
-   margin-left: 50%;
+   right: 0;
+   top: 5;
    text-align: center;
-   background-color: green;
 }
 
 #category {
    font-size: 1em;
+   background-color: dodgerblue;
 }
 
 #frame {
