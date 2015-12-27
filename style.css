@@ -3,15 +3,16 @@ html, body {
 }
 
 #navbar {
+   font-size: 1.5em;
    position: fixed;
-   right: 0;
-   top: 5;
-   text-align: center;
+}
+
+#navbar button span {
+	font-size: 1.5em;
 }
 
 #category {
-   font-size: 1em;
-   background-color: green;
+   background-color: dodgerblue;
 }
 
 #frameDiv {

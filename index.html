@@ -5,13 +5,15 @@
 </head>
 
 <title>
-  First webpage
+  WikiProj
 </title>
 
 <body>
   <!-- Redirect button -->
   <div id="navbar">
-    <button onclick="primReload()"> <span style="font-size: 3em">Primitive reload</span> </button>
+    <button onclick="primReload()">
+      <span> Primitive reload </span>
+    </button>
     <p id="category"></p>
   </div>
 
@@ -32,6 +34,7 @@
     document.getElementById("frame").src = url;
   }
   </script>
+  
 <!--
   <div id="navbar">
     <button onclick="showDim()"> <span style="font-size: 3em">Dimensions</span> </button>
@@ -47,6 +50,7 @@
   }
   </script>
 -->
+
   <div id="frameDiv">
     <iframe src="https://en.m.wikipedia.org/wiki/Uradome_Coast" id="frame"> Nothing here </iframe>
   </div>
