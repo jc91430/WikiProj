@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-   <head>
-      <link type="text/css" rel="stylesheet" href="style.css"/>
-   </head>
+<head>
+  <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
 
-   <title>
-      First webpage
-   </title>
+<title>
+  First webpage
+</title>
 
-   <body>
-      <!-- Redirect button -->
-      <div id="navbar">
-         <a href="index.html"><p>Reload</p></a>
-         <button onclick="primReload()"> Primitive reload </button>
-         <p id="category"></p>
-      </div>
+<body>
+  <!-- Redirect button -->
+  <div id="navbar">
+    <a href="index.html"><p>Reload</p></a>
+    <button onclick="primReload()"> Primitive reload </button>
+    <p id="category"></p>
+  </div>
 
-      <div>
-         <iframe id="frame"> Nothing here </iframe>
-      </div>
+  <div id="frameDiv">
+    <iframe id="frame"> Nothing here </iframe>
+  </div>
 
-      <script>
-         function primReload() {
-            var n = Math.floor(Math.random() * 2);
-            var url = "https://en.wikipedia.org/wiki/Special:RandomInCategory/";
+  <script>
+  function primReload() {
+    var n = Math.floor(Math.random() * 2);
+    var url = "https://en.wikipedia.org/wiki/Special:RandomInCategory/";
 
-            if (n == 0) {
-               url = url + "Beaches_of_Japan";
-               document.getElementById("category").innerHTML = "Current category: Beaches of Japan";
-            }
-            else {
-               url = url + "Cold_War";
-               document.getElementById("category").innerHTML = "Current category: Cold War";
-            }
+    if (n == 0) {
+    url = url + "Beaches_of_Japan";
+    document.getElementById("category").innerHTML = "Current category: Beaches of Japan";
+    }
+    else {
+    url = url + "Cold_War";
+    document.getElementById("category").innerHTML = "Current category: Cold War";
+    }
 
-            document.getElementById("frame").src = url;
-         }
-      </script>
-   </body>
+    document.getElementById("frame").src = url;
+  }
+  </script>
+</body>
 </html>
