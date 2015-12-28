@@ -9,24 +9,17 @@
 </head>
 
 <body>
-    <!-- Redirect button -->
-    <!--
-    <div id="navbar">
-      <button onclick="reload()">
-        <span> Primitive reload </span>
-      </button>
-    </div>-->
+    <!-- Navbar at the top -->
     <div id="topnav">
       <span id="editButton">Edit</span>
-      <span id="nextButton" onclick="reload()">Next</span>
+      <span id="nextButton" onclick="reload()">Next article</span>
     </div>
-
-    <span id="category"></span>
 
     <script type="text/JavaScript" src="reload.js"></script>
 
+    <!-- iframe that loads Wikipedia page -->
     <div id="frameDiv">
-      <iframe src="https://en.m.wikipedia.org/wiki/Uradome_Coast" id="frame"> Nothing here </iframe>
+      <iframe src="https://en.m.wikipedia.org/wiki/Uradome_Coast" id="frame"> Failed to load </iframe>
     </div>
 </body>
 </html>
