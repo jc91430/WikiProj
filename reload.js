@@ -1,9 +1,10 @@
 //Reload the iframe with a random page from one interested category
 //Need to add in mobile/desktop switching. Currently locked into mobile
-var hardcode = ["Beaches_of_Japan", "Pastries", "Tea", "Island_countries", "Gundam"];
+var hardcoded = ["Beaches_of_Japan", "Pastries", "Tea", "Island_countries", "Gundam"];
 
 function reload() {
 
+  //Temporary, move later
   setPreferences();
 
   var categories = getCategories();
@@ -19,7 +20,7 @@ function getCategories() {
   return document.cookie.split("#");
 }
 
+//Set cookie of user-selected preferred categories
 function setPreferences() {
-  document.cookie = "preferences=" + hardcode.join("#") + ";";
-  console.log(document.cookie + " set as cookie");
+  document.cookie = "preferences=" + hardcoded.join("#") + ";";
 }
