@@ -24,3 +24,18 @@ function getCategories() {
 function setPreferences() {
   document.cookie = "preferences=" + hardcoded.join("#") + ";";
 }
+
+function toggleOverlay() {
+  var overlay = document.getElementById('settingsOverlay');
+  var specialBox = document.getElementById('settings');
+  overlay.style.opacity = .5;
+
+  if (overlay.style.display == "block") {
+    overlay.style.display = "none";
+    specialBox.style.display = "none";
+  }
+  else {
+    overlay.style.display = "block";
+    specialBox.style.display = "block";
+  }
+}

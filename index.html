@@ -11,11 +11,17 @@
 <body>
     <!-- Navbar at the top -->
     <div id="topnav">
-      <a href="settings.html"><span id="editButton">Edit</span></a>
+      <span id="editButton" onclick="toggleOverlay()">Edit</span>
       <span id="nextButton" onclick="reload()">Next article</span>
     </div>
 
     <script type="text/JavaScript" src="functions.js"></script>
+
+    <div id="settingsOverlay"></div>
+    <div id="settings">
+      <p>Select interested categories</p>
+      <button onmousedown="toggleOverlay()">close</button>
+    </div>
 
     <!-- iframe that loads Wikipedia page -->
     <div id="frameDiv">
